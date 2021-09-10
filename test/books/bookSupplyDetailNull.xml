@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupplyDetail>
+	<Supplier>
+		<SupplierRole>01</SupplierRole>
+		<SupplierIdentifier>
+			<SupplierIDType>06</SupplierIDType>
+			<IDValue>5051366000000</IDValue>
+		</SupplierIdentifier>
+		<SupplierName>HarperCollins Publishers</SupplierName>
+		<TelephoneNumber>+44 1417 723200</TelephoneNumber>
+	</Supplier>
+	<ProductAvailability>21</ProductAvailability>
+</SupplyDetail>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CollateralDetail>
+	<TextContent>
+		<TextType>02</TextType>
+		<ContentAudience>00</ContentAudience>
+		<Text textformat="05"><p><strong>Perennial relaunches the first novel in the classic Martin Beck detective series from the 1960s</strong></p></Text>
+	</TextContent>
+	<TextContent>
+		<TextType>03</TextType>
+		<ContentAudience>00</ContentAudience>
+		<Text textformat="05"><p>Widely recognised as the among the greatest crime fiction ever written</p></Text>
+	</TextContent>
+	<TextContent>
+		<TextType>06</TextType>
+		<ContentAudience>00</ContentAudience>
+		<Text textformat="05">‘The writing is elegant and surprisingly humorous'</Text>
+		<SourceTitle>The Guardian</SourceTitle>
+	</TextContent>
+	<TextContent>
+		<TextType>06</TextType>
+		<ContentAudience>00</ContentAudience>
+		<Text textformat="05"><p>‘Their mysteries don’t just read well; they reread even better'</p></Text>
+		<SourceTitle>New York Times</SourceTitle>
+	</TextContent>
+	<TextContent>
+		<TextType>10</TextType>
+		<ContentAudience>00</ContentAudience>
+		<Text>One of the greatest masterpieces of crime fiction</Text>
+	</TextContent>
+</CollateralDetail>

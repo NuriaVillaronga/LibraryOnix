@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Language>
+		<LanguageRole>01</LanguageRole>
+		<LanguageCode>eng</LanguageCode>
+	</Language>
+	<Language>
+		<LanguageRole>02</LanguageRole>
+		<LanguageCode>swe</LanguageCode>
+	</Language>
+</DescriptiveDetail>

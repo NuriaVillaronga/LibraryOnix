@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupplyDetail>
+	<Price>
+		<PriceType>02</PriceType>
+		<DiscountCoded>
+			<DiscountCodeType>01</DiscountCodeType>
+			<DiscountCode>AHACP029</DiscountCode>
+		</DiscountCoded>
+		<PriceStatus>02</PriceStatus>
+		<PriceAmount>7.99</PriceAmount>
+		<Tax>
+			<TaxType>01</TaxType>
+			<TaxRateCode>Z</TaxRateCode>
+			<TaxRatePercent>0</TaxRatePercent>
+			<TaxableAmount>7.99</TaxableAmount>
+			<TaxAmount>0.00</TaxAmount>
+		</Tax>
+		<CurrencyCode>GBP</CurrencyCode>
+		<Territory>
+			<CountriesIncluded>GB</CountriesIncluded>
+		</Territory>
+		<PrintedOnProduct>02</PrintedOnProduct>
+		<PositionOnProduct>01</PositionOnProduct>
+	</Price>
+	<Price>
+		<PriceType>01</PriceType>
+		<Discount>
+			<DiscountPercent>37.5</DiscountPercent>
+		</Discount>
+		<PriceStatus>02</PriceStatus>
+		<PriceAmount>8.99</PriceAmount>
+		<CurrencyCode>EUR</CurrencyCode>
+		<Territory>
+			<CountriesIncluded>AT BE CY FI FR DE ES GR IE IT LU MT NL PT SI SK AD MC ME SM VA</CountriesIncluded>
+		</Territory>
+		<PrintedOnProduct>01</PrintedOnProduct>
+	</Price>
+	<Price>
+		<PriceType>01</PriceType>
+		<Discount>
+			<DiscountPercent>42.5</DiscountPercent>
+		</Discount>
+		<PriceStatus>02</PriceStatus>
+		<PriceAmount>7.99</PriceAmount>
+		<CurrencyCode>GBP</CurrencyCode>
+		<Territory>
+			<RegionsIncluded>WORLD</RegionsIncluded>
+			<CountriesExcluded>GB AT BE CY FI FR DE ES GR IE IT LU MT NL PT SI SK PH PR US VI ZA</CountriesExcluded>
+		</Territory>
+		<PrintedOnProduct>01</PrintedOnProduct>
+	</Price>
+</SupplyDetail>

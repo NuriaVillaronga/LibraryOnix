@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Extent>
+		<ExtentType>00</ExtentType>
+		<ExtentValue>245</ExtentValue>
+		<ExtentUnit>03</ExtentUnit>
+	</Extent>
+	<Extent>
+		<ExtentType>04</ExtentType>
+		<ExtentValue>16</ExtentValue>
+		<ExtentUnit>03</ExtentUnit>
+	</Extent>
+</DescriptiveDetail>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductSupply>
+	<Market>
+		<Territory>
+			<RegionsIncluded>WORLD</RegionsIncluded>
+			<CountriesExcluded>AS AU CA GU MP NZ PH PR US VI ZA</CountriesExcluded>
+		</Territory>
+	</Market>
+</ProductSupply>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contributor>
+	<SequenceNumber>1</SequenceNumber>
+	<ContributorRole>A01</ContributorRole>
+	<FromLanguage>swe</FromLanguage>
+	<NameIdentifier>
+		<NameIDType>01</NameIDType>
+		<IDTypeName>HCP Author ID</IDTypeName>
+		<IDValue>7421</IDValue>
+	</NameIdentifier>
+	<NameIdentifier>
+		<NameIDType>16</NameIDType>
+		<IDValue>0000000121479135</IDValue>
+	</NameIdentifier>
+	<NamesBeforeKey>Maj</NamesBeforeKey>
+	<KeyNames>Sjöwall</KeyNames>
+	<BiographicalNote textformat="05"><strong>Maj Sjöwall</strong> was born in Stockholm in 1935</BiographicalNote>
+</Contributor>

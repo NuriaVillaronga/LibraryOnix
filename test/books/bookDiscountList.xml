@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Price>
+	<Discount>
+		<DiscountPercent>37.5</DiscountPercent>
+	</Discount>
+	<Discount>
+		<DiscountPercent>77.8</DiscountPercent>
+	</Discount>
+</Price>

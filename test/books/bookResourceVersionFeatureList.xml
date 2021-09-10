@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceVersion>
+	<ResourceVersionFeature>
+		<ResourceVersionFeatureType>01</ResourceVersionFeatureType>
+		<FeatureValue>D502</FeatureValue>
+	</ResourceVersionFeature>
+	<ResourceVersionFeature>
+		<ResourceVersionFeatureType>02</ResourceVersionFeatureType>
+		<FeatureValue>341</FeatureValue>
+	</ResourceVersionFeature>
+	<ResourceVersionFeature>
+		<ResourceVersionFeatureType>03</ResourceVersionFeatureType>
+		<FeatureValue>222</FeatureValue>
+	</ResourceVersionFeature>
+</ResourceVersion>

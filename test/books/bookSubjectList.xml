@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Subject>
+		<MainSubject/>
+		<SubjectSchemeIdentifier>93</SubjectSchemeIdentifier>
+		<SubjectSchemeVersion>1.3</SubjectSchemeVersion>
+		<SubjectCode>FFP</SubjectCode>
+	</Subject>
+	<Subject>
+		<SubjectSchemeIdentifier>93</SubjectSchemeIdentifier>
+		<SubjectSchemeVersion>1.3</SubjectSchemeVersion>
+		<SubjectCode>FYT</SubjectCode>
+	</Subject>
+	<Subject>
+		<SubjectSchemeIdentifier>94</SubjectSchemeIdentifier>
+		<SubjectSchemeVersion>1.3</SubjectSchemeVersion>
+		<SubjectCode>1DNS</SubjectCode>
+	</Subject>
+	<Subject>
+		<SubjectSchemeIdentifier>96</SubjectSchemeIdentifier>
+		<SubjectSchemeVersion>1.3</SubjectSchemeVersion>
+		<SubjectCode>3MPQS</SubjectCode>
+	</Subject>
+	<Subject>
+		<MainSubject/>
+		<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>
+		<SubjectSchemeVersion>2017</SubjectSchemeVersion>
+		<SubjectCode>FIC022000</SubjectCode>
+	</Subject>
+	<Subject>
+		<SubjectSchemeIdentifier>20</SubjectSchemeIdentifier>
+		<SubjectHeadingText>Martin Beck; Roseanna McGraw; Lake Vättern; Stockholm; police procedural</SubjectHeadingText>
+	</Subject>
+</DescriptiveDetail>

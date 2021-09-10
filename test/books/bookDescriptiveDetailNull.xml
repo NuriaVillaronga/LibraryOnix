@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+			<ProductComposition>00</ProductComposition>
+			<ProductForm>BC</ProductForm>
+			<TitleDetail>
+				<TitleType>01</TitleType>
+				<TitleElement>
+					<SequenceNumber>1</SequenceNumber>
+					<TitleElementLevel>01</TitleElementLevel>
+					<NoPrefix/>
+					<TitleWithoutPrefix textcase="01">Roseanna</TitleWithoutPrefix>
+				</TitleElement>
+			</TitleDetail>
+			<TitleDetail>
+				<TitleType>10</TitleType>
+				<TitleElement>
+					<TitleElementLevel>01</TitleElementLevel>
+					<TitleText>ROSEANNA (MARTIN BECK #1)</TitleText>
+				</TitleElement>
+			</TitleDetail>
+</DescriptiveDetail>

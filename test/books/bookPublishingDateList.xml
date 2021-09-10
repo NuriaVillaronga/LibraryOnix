@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishingDetail>
+	<PublishingDate>
+		<PublishingDateRole>01</PublishingDateRole>
+		<Date dateformat="00">20060807</Date>
+	</PublishingDate>
+	<PublishingDate>
+		<PublishingDateRole>11</PublishingDateRole>
+		<Date dateformat="05">1968</Date>
+	</PublishingDate>
+	<PublishingDate>
+		<PublishingDateRole>20</PublishingDateRole>
+		<Date dateformat="05">1965</Date>
+	</PublishingDate>
+</PublishingDetail>

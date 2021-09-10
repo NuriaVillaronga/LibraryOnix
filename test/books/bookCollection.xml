@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Collection>
+	<CollectionType>10</CollectionType>
+	<TitleDetail>
+		<TitleType>01</TitleType>
+		<TitleElement>
+			<SequenceNumber>2</SequenceNumber>
+			<TitleElementLevel>02</TitleElementLevel>
+			<TitlePrefix textcase="01">The</TitlePrefix>
+			<TitleWithoutPrefix textcase="01">Martin Beck series</TitleWithoutPrefix>
+		</TitleElement>
+		<TitleElement>
+			<SequenceNumber>3</SequenceNumber>
+			<TitleElementLevel>01</TitleElementLevel>
+			<PartNumber>1</PartNumber>
+		</TitleElement>
+	</TitleDetail>
+</Collection>

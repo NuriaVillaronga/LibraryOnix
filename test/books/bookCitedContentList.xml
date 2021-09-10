@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CollateralDetail>
+	<CitedContent>
+		<CitedContentType>03</CitedContentType>
+		<ContentAudience>00</ContentAudience>
+		<SourceType>01</SourceType>
+		<SourceTitle>Observer Magazine</SourceTitle>
+		<CitationNote>Interview with Maj Sjöwall by Louise France</CitationNote>
+		<ResourceLink>http://www.guardian.co.uk/books/2009/nov/22/crime-thriller-maj-sjowall-sweden</ResourceLink>
+		<ContentDate>
+			<ContentDateRole>01</ContentDateRole>
+			<Date dateformat="00">20091122</Date>
+		</ContentDate>
+	</CitedContent>
+</CollateralDetail>

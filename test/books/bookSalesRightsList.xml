@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishingDetail>
+	<SalesRights>
+		<SalesRightsType>01</SalesRightsType>
+		<Territory>
+			<CountriesIncluded>AG AI AU BB BDJM JO KE KI PN SB SC SD SG SH  ZW</CountriesIncluded>
+		</Territory>
+	</SalesRights>
+	<SalesRights>
+		<SalesRightsType>06</SalesRightsType>
+		<Territory>
+			<CountriesIncluded>AS CA GU MP PH PR US VI</CountriesIncluded>
+		</Territory>
+	</SalesRights>
+</PublishingDetail>

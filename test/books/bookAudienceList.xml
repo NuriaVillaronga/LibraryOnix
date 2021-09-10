@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Audience>
+		<AudienceCodeType>01</AudienceCodeType>
+		<AudienceCodeValue>01</AudienceCodeValue>
+	</Audience>
+	<Audience>
+		<AudienceCodeType>22</AudienceCodeType>
+		<AudienceCodeValue>01</AudienceCodeValue>
+	</Audience>
+</DescriptiveDetail>

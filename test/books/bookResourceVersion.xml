@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceVersion>
+   <ResourceForm>01</ResourceForm>
+   <ResourceLink>http://browseinside.harpercollins.co.uk</ResourceLink>
+   <ResourceVersionFeature>
+       <ResourceVersionFeatureType>02</ResourceVersionFeatureType>
+       <FeatureValue>341</FeatureValue>
+   </ResourceVersionFeature>
+   <ContentDate>
+       <ContentDateRole>17</ContentDateRole>
+       <Date dateformat="00">20060412</Date>
+   </ContentDate>
+</ResourceVersion>

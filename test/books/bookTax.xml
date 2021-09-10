@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tax>
+	<TaxType>01</TaxType>
+	<TaxRateCode>Z</TaxRateCode>
+	<TaxRatePercent>0</TaxRatePercent>
+	<TaxableAmount>7.99</TaxableAmount>
+	<TaxAmount>0.00</TaxAmount>
+</Tax>

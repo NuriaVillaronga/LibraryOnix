@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupplyDetail>
+	<ReturnsConditions>
+		<ReturnsCodeType>02</ReturnsCodeType>
+		<ReturnsCode>Y</ReturnsCode>
+	</ReturnsConditions>
+</SupplyDetail>

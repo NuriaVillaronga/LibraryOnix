@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Measure>
+		<MeasureType>01</MeasureType>
+		<Measurement>197</Measurement>
+		<MeasureUnitCode>mm</MeasureUnitCode>
+	</Measure>
+	<Measure>
+		<MeasureType>02</MeasureType>
+		<Measurement>130</Measurement>
+		<MeasureUnitCode>mm</MeasureUnitCode>
+	</Measure>
+	<Measure>
+		<MeasureType>03</MeasureType>
+		<Measurement>18</Measurement>
+		<MeasureUnitCode>mm</MeasureUnitCode>
+	</Measure>
+	<Measure>
+		<MeasureType>08</MeasureType>
+		<Measurement>195</Measurement>
+		<MeasureUnitCode>gr</MeasureUnitCode>
+	</Measure>
+</DescriptiveDetail>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DescriptiveDetail>
+	<Contributor>
+		<SequenceNumber>1</SequenceNumber>
+		<ContributorRole>A01</ContributorRole>
+		<NameIdentifier>
+			<NameIDType>01</NameIDType>
+			<IDTypeName>HCP Author ID</IDTypeName>
+			<IDValue>7421</IDValue>
+		</NameIdentifier>
+		<NameIdentifier>
+			<NameIDType>16</NameIDType>
+			<IDValue>0000000121479135</IDValue>
+		</NameIdentifier>
+		<NamesBeforeKey>Maj</NamesBeforeKey>
+		<KeyNames>Sjöwall</KeyNames>
+		<BiographicalNote textformat="05"><p><strong>Maj Sjöwall</strong> was born in Stockholm in 1935.</p></BiographicalNote>
+	</Contributor>
+	<Contributor>
+		<SequenceNumber>2</SequenceNumber>
+		<ContributorRole>A01</ContributorRole>
+		<NameIdentifier>
+			<NameIDType>01</NameIDType>
+			<IDTypeName>HCP Author ID</IDTypeName>
+			<IDValue>7422</IDValue>
+		</NameIdentifier>
+		<NameIdentifier>
+			<NameIDType>16</NameIDType>
+			<IDValue>0000000121222604</IDValue>
+		</NameIdentifier>
+		<NamesBeforeKey>Per</NamesBeforeKey>
+		<KeyNames>Wahlöö</KeyNames>
+		<BiographicalNote textformat="05"><p><strong>Per Wahlöö</strong> was born in Göteborg. iter.</p></BiographicalNote>
+	</Contributor>
+	<Contributor>
+		<SequenceNumber>3</SequenceNumber>
+		<ContributorRole>B06</ContributorRole>
+		<FromLanguage>swe</FromLanguage>
+		<NameIdentifier>
+			<NameIDType>01</NameIDType>
+			<IDTypeName>HCP Author ID</IDTypeName>
+			<IDValue>11150</IDValue>
+		</NameIdentifier>
+		<NamesBeforeKey>Lois</NamesBeforeKey>
+		<KeyNames>Roth</KeyNames>
+	</Contributor>
+	<Contributor>
+		<SequenceNumber>4</SequenceNumber>
+		<ContributorRole>A24</ContributorRole>
+		<NameIdentifier>
+			<NameIDType>01</NameIDType>
+			<IDTypeName>HCP Author ID</IDTypeName>
+			<IDValue>11151</IDValue>
+		</NameIdentifier>
+		<NameIdentifier>
+			<NameIDType>16</NameIDType>
+			<IDValue>0000000122824957</IDValue>
+		</NameIdentifier>
+		<NamesBeforeKey>Henning</NamesBeforeKey>
+		<KeyNames>Mankell</KeyNames>
+	</Contributor>
+</DescriptiveDetail>

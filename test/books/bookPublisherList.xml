@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublishingDetail>
+	<Publisher>
+		<PublishingRole>01</PublishingRole>
+		<PublisherIdentifier>
+			<PublisherIDType>16</PublisherIDType>
+			<IDValue>0000000404222532</IDValue>
+		</PublisherIdentifier>
+		<PublisherName>HarperCollins Publishers</PublisherName>
+		<Website>
+			<WebsiteRole>01</WebsiteRole>
+			<WebsiteLink>http://www.harpercollins.co.uk</WebsiteLink>
+		</Website>
+	</Publisher>
+</PublishingDetail>

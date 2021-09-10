@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SupportingResource>
+		<ResourceContentType>01</ResourceContentType>
+		<ContentAudience>00</ContentAudience>
+		<ResourceMode>03</ResourceMode>
+		<ResourceVersion>
+			<ResourceForm>02</ResourceForm>
+			<ResourceVersionFeature>
+						<ResourceVersionFeatureType>01</ResourceVersionFeatureType>
+						<FeatureValue>D502</FeatureValue>
+			</ResourceVersionFeature>
+			<ResourceLink>http://www.harpercollins.co.uk/covers/9780007232833.jpg</ResourceLink>
+			<ContentDate>
+				<ContentDateRole>17</ContentDateRole>
+				<Date dateformat="00">20060412</Date>
+			</ContentDate>
+		</ResourceVersion>
+</SupportingResource>
