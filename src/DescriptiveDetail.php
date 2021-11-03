@@ -42,7 +42,7 @@ class DescriptiveDetail
         $this->productComposition = new ProductComposition($nodeDescriptiveDetail->ProductComposition);
         $this->productForm = new ProductForm($nodeDescriptiveDetail->ProductForm);
 
-        if (isset($nodeDescriptiveDetail->NoEdition) == true && empty($nodeDescriptiveDetail->NoEdition) == true) {
+        if (isset($nodeDescriptiveDetail->NoEdition) == true) {
             $this->noEdition = new NoEdition($nodeDescriptiveDetail->NoEdition);
         } else {
             $this->noEdition = null;

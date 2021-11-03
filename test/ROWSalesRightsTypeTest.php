@@ -11,7 +11,7 @@ class ROWSalesRightsTypeTest extends TestCase
                                                          <ROWSalesRightsType>02</ROWSalesRightsType>');
         
         $rOWSalesRightsType = new ROWSalesRightsType($nodoROWSalesRightsType);
-        $this->assertEquals('02', $rOWSalesRightsType->contenido);
+        $this->assertEquals('02', $rOWSalesRightsType->contents);
     }
 }
 

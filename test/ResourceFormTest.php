@@ -11,7 +11,7 @@ class ResourceFormTest extends TestCase
                                                    <ResourceForm>01</ResourceForm>');
         
         $resourceForm = new ResourceForm($nodoResourceForm);
-        $this->assertEquals('01', $resourceForm->contenido);
+        $this->assertEquals('01', $resourceForm->contents);
     }
 }
 

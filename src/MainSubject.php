@@ -6,12 +6,11 @@ use SimpleXMLElement;
 class MainSubject
 {
 
-    public string $contents;
+    public bool $contents;
 
     public function __construct(SimpleXMLElement $nodeMainSubject)
     {
-        //$this->contents = (string) $nodeMainSubject;
-        $this->contents = true;
+        $this->contents = (bool) $nodeMainSubject;
     }
 }
 

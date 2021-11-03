@@ -11,7 +11,7 @@ class ResourceContentTypeTest extends TestCase
                                                           <ResourceContentType>01</ResourceContentType>');
         
         $resourceContentType = new ResourceContentType($nodoResourceContentType);
-        $this->assertEquals('01', $resourceContentType->contenido);
+        $this->assertEquals('01', $resourceContentType->contents);
     }
 }
 

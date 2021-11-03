@@ -11,7 +11,7 @@ class SubjectSchemeIdentifierTest extends TestCase
                                                               <SubjectSchemeIdentifier>96</SubjectSchemeIdentifier>');
         
         $subjectSchemeIdentifier = new SubjectSchemeIdentifier($nodoSubjectSchemeIdentifier);
-        $this->assertEquals('96', $subjectSchemeIdentifier->contenido);
+        $this->assertEquals('96', $subjectSchemeIdentifier->contents);
     }
 }
 

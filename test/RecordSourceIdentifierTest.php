@@ -15,7 +15,7 @@ class RecordSourceIdentifierTest extends TestCase
         
         $recordSourceIdentifier = new RecordSourceIdentifier($nodoRecordSourceIdentifier);
         $this->assertNotNull($recordSourceIdentifier->recordSourceIDType);
-        $this->assertNotNull($recordSourceIdentifier->iDValue);
+        $this->assertNotNull($recordSourceIdentifier->idValue);
     }
 }
 

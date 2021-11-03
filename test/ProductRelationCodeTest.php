@@ -11,7 +11,7 @@ class ProductRelationCodeTest extends TestCase
                                                           <ProductRelationCode>27</ProductRelationCode>');
         
         $productRelationCode = new ProductRelationCode($nodoProductRelationCode);
-        $this->assertEquals('27', $productRelationCode->contenido);
+        $this->assertEquals('27', $productRelationCode->contents);
     }
 }
 

@@ -11,7 +11,7 @@ class RegionsIncludedTest extends TestCase
                                                       <RegionsIncluded>WORLD</RegionsIncluded>');
         
         $regionsIncluded = new RegionsIncluded($nodoRegionsIncluded);
-        $this->assertEquals('WORLD', $regionsIncluded->contenido);
+        $this->assertEquals('WORLD', $regionsIncluded->contents);
     }
 }
 

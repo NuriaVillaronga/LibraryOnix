@@ -11,7 +11,7 @@ class SupplierIDTypeTest extends TestCase
                                                      <SupplierIDType>07</SupplierIDType>');
         
         $supplierIDType = new SupplierIDType($nodoSupplierIDType);
-        $this->assertEquals('07', $supplierIDType->contenido);
+        $this->assertEquals('07', $supplierIDType->contents);
     }
 }
 

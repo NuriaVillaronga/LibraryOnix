@@ -11,7 +11,7 @@ class PublishingDateRoleTest extends TestCase
                                                          <PublishingDateRole>01</PublishingDateRole>');
         
         $publishingDateRole = new PublishingDateRole($nodoPublishingDateRole);
-        $this->assertEquals('01', $publishingDateRole->contenido); 
+        $this->assertEquals('01', $publishingDateRole->contents); 
     }
 }
 

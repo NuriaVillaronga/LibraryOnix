@@ -11,7 +11,7 @@ class TitleTextTest extends TestCase
                                                 <TitleText>ROSEANNA (MARTIN BECK #1)</TitleText>');
         
         $titleText = new TitleText($nodoTitleText);
-        $this->assertEquals('ROSEANNA (MARTIN BECK #1)', $titleText->contenido);
+        $this->assertEquals('ROSEANNA (MARTIN BECK #1)', $titleText->contents);
     }
 }
 

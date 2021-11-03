@@ -11,7 +11,7 @@ class ProductCompositionTest extends TestCase
                                                          <ProductComposition>00</ProductComposition>');
         
         $productComposition = new ProductComposition($nodoProductComposition);
-        $this->assertEquals('00', $productComposition->contenido);
+        $this->assertEquals('00', $productComposition->contents);
     }
 }
 

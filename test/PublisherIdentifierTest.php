@@ -15,7 +15,7 @@ class PublisherIdentifierTest extends TestCase
         
         $publisherIdentifier = new PublisherIdentifier($nodoPublisherIdentifier);
         $this->assertNotNull($publisherIdentifier->publisherIDType);
-        $this->assertNotNull($publisherIdentifier->iDValue);
+        $this->assertNotNull($publisherIdentifier->idValue);
     }
 }
 

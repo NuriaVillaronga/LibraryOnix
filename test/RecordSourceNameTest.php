@@ -11,7 +11,7 @@ class RecordSourceNameTest extends TestCase
                                                        <RecordSourceName>Global Bookinfo</RecordSourceName>');
         
         $recordSourceName = new RecordSourceName($nodoRecordSourceName);
-        $this->assertEquals('Global Bookinfo', $recordSourceName->contenido);
+        $this->assertEquals('Global Bookinfo', $recordSourceName->contents);
     }
 }
 

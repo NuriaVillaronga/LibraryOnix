@@ -15,7 +15,7 @@ class WorkIdentifierTest extends TestCase
         
         $workIdentifier = new WorkIdentifier($nodoWorkIdentifier);
         $this->assertNotNull($workIdentifier->workIDType);
-        $this->assertNotNull($workIdentifier->iDValue);
+        $this->assertNotNull($workIdentifier->idValue);
     }
 }
 

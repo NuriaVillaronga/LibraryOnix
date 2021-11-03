@@ -38,7 +38,7 @@ class Subject
             $this->subjectHeadingTextList = null;
         }
 
-        if (isset($nodeSubject->MainSubject) == true && empty($nodeSubject->MainSubject) == true) {
+        if (isset($nodeSubject->MainSubject) == true) {
             $this->mainSubject = new MainSubject($nodeSubject->MainSubject);
         } else {
             $this->mainSubject = null;

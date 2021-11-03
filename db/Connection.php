@@ -1,4 +1,5 @@
 <?php
+namespace DBOnix;
 
 class Connection
 {

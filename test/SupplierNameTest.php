@@ -11,7 +11,7 @@ class SupplierNameTest extends TestCase
                                                    <SupplierName>HarperCollins Publishers</SupplierName>');
         
         $supplierName = new SupplierName($nodoSupplierName);
-        $this->assertEquals('HarperCollins Publishers', $supplierName->contenido); 
+        $this->assertEquals('HarperCollins Publishers', $supplierName->contents); 
     }
 }
 

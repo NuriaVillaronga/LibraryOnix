@@ -11,7 +11,7 @@ class ResourceVersionFeatureTypeTest extends TestCase
                                                                  <ResourceVersionFeatureType>03</ResourceVersionFeatureType>');
         
         $resourceVersionFeatureType = new ResourceVersionFeatureType($nodoResourceVersionFeatureType);
-        $this->assertEquals('03', $resourceVersionFeatureType->contenido);
+        $this->assertEquals('03', $resourceVersionFeatureType->contents);
     }
 }
 

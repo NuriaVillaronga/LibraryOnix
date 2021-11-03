@@ -11,7 +11,7 @@ class RecordSourceIDTypeTest extends TestCase
                                                          <RecordSourceIDType>06</RecordSourceIDType>');
         
         $recordSourceIDType = new RecordSourceIDType($nodoRecordSourceIDType);
-        $this->assertEquals('06', $recordSourceIDType->contenido);
+        $this->assertEquals('06', $recordSourceIDType->contents);
     }
 }
 

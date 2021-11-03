@@ -16,7 +16,7 @@ class Measure
     {
         $this->measureType = new MeasureType($nodeMeasure->MeasureType);
         $this->measurement = new Measurement($nodeMeasure->Measurement);
-        $this->measureUnitCode = new MeasureUnitCode($nodeMeasure->measureUnitCode);
+        $this->measureUnitCode = new MeasureUnitCode($nodeMeasure->MeasureUnitCode);
     }
 }
 

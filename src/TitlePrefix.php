@@ -18,8 +18,7 @@ class TitlePrefix
             $this->textcase = null;
         }
 
-        //$this->contents = (string) ($nodeTitlePrefix);
-        $this->contents = true;
+        $this->contents = (string) ($nodeTitlePrefix);
     }
 }
 

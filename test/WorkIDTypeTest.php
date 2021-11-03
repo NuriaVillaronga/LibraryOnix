@@ -11,7 +11,7 @@ class WorkIDTypeTest extends TestCase
                                                  <WorkIDType>11</WorkIDType>');
         
         $workIDType = new WorkIDType($nodoWorkIDType);
-        $this->assertEquals('11', $workIDType->contenido);
+        $this->assertEquals('11', $workIDType->contents);
     }
 }
 

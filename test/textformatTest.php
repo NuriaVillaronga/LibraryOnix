@@ -11,7 +11,7 @@ class textformatTest extends TestCase
                                         <Dummy textformat="05"></Dummy>');
         
         $textformat = new textformat($dummy['textformat']);
-        $this->assertEquals('05', $textformat->contenido);
+        $this->assertEquals('05', $textformat->contents);
     }
 }
 

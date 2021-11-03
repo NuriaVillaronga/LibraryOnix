@@ -11,7 +11,7 @@ class ProductFormDetailTest extends TestCase
                                                         <ProductFormDetail>B105</ProductFormDetail>');
         
         $productFormDetail = new ProductFormDetail($nodoProductFormDetail);
-        $this->assertEquals('B105', $productFormDetail->contenido);
+        $this->assertEquals('B105', $productFormDetail->contents);
     }
 }
 

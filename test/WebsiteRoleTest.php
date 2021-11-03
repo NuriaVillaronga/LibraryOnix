@@ -11,7 +11,7 @@ class WebsiteRoleTest extends TestCase
                                                   <WebsiteRole>01</WebsiteRole>');
         
         $websiteRole = new WebsiteRole($nodoWebsiteRole);
-        $this->assertEquals('01', $websiteRole->contenido);
+        $this->assertEquals('01', $websiteRole->contents);
     }
 }
 

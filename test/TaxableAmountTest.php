@@ -11,7 +11,7 @@ class TaxableAmountTest extends TestCase
                                                     <TaxableAmount>7.99</TaxableAmount>');
         
         $taxableAmount = new TaxableAmount($nodoTaxableAmount);
-        $this->assertEquals('7.99', $taxableAmount->contenido);
+        $this->assertEquals('7.99', $taxableAmount->contents);
     }
 }
 

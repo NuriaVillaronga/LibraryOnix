@@ -11,7 +11,7 @@ class TaxTypeTest extends TestCase
                                               <TaxType>01</TaxType>');
         
         $taxType = new TaxType($nodoTaxType);
-        $this->assertEquals('01', $taxType->contenido); 
+        $this->assertEquals('01', $taxType->contents); 
     }
 }
 

@@ -11,7 +11,7 @@ class ReturnsCodeTest extends TestCase
                                                   <ReturnsCode>Y</ReturnsCode>');
         
         $returnsCode = new ReturnsCode($nodoReturnsCode);
-        $this->assertEquals('Y', $returnsCode->contenido);
+        $this->assertEquals('Y', $returnsCode->contents);
     }
 }
 

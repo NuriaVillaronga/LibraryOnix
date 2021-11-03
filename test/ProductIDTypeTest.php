@@ -11,7 +11,7 @@ class ProductIDTypeTest extends TestCase
                                                     <ProductIDType>15</ProductIDType>');
         
         $productIDType = new ProductIDType($nodoProductIDType);
-        $this->assertEquals('15', $productIDType->contenido);
+        $this->assertEquals('15', $productIDType->contents);
     }
 }
 

@@ -6,12 +6,11 @@ use SimpleXMLElement;
 class NoPrefix
 {
 
-    public string $contents;
+    public bool $contents;
 
     public function __construct(SimpleXMLElement $nodeNoPrefix)
     {
-        //$this->contents = (string) $nodeNoPrefix;
-        $this->contents = true;
+        $this->contents = (bool) $nodeNoPrefix;
     }
 }
 

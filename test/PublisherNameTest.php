@@ -11,7 +11,7 @@ class PublisherNameTest extends TestCase
                                                     <PublisherName>HarperCollins Publishers</PublisherName>');
         
         $publisherName = new PublisherName($nodoPublisherName);
-        $this->assertEquals('HarperCollins Publishers', $publisherName->contenido);
+        $this->assertEquals('HarperCollins Publishers', $publisherName->contents);
     }
 }
 

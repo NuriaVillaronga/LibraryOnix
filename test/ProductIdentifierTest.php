@@ -15,7 +15,7 @@ class ProductIdentifierTest extends TestCase
         
         $productIdentifier = new ProductIdentifier($nodoProductIdentifier);
         $this->assertNotNull($productIdentifier->productIDType);
-        $this->assertNotNull($productIdentifier->iDValue);
+        $this->assertNotNull($productIdentifier->idValue);
     }
 }
 

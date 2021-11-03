@@ -11,7 +11,7 @@ class SenderNameTest extends TestCase
                                                   <SenderName>Global Bookinfo</SenderName>');
         
         $senderName = new SenderName($nodoSenderName);
-        $this->assertEquals('Global Bookinfo', $senderName->contenido);
+        $this->assertEquals('Global Bookinfo', $senderName->contents);
     }
 }
 

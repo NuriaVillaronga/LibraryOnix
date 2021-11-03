@@ -11,7 +11,7 @@ class SequenceNumberTest extends TestCase
                                                      <SequenceNumber>1</SequenceNumber>');
         
         $sequenceNumber = new SequenceNumber($nodoSequenceNumber);
-        $this->assertEquals('1', $sequenceNumber->contenido);
+        $this->assertEquals('1', $sequenceNumber->contents);
     }
 }
 

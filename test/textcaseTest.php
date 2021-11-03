@@ -12,7 +12,7 @@ class textcaseTest extends TestCase
                                         <Dummy textcase="01"></Dummy>');
         
         $textcase = new textcase($dummy['textcase']);
-        $this->assertEquals('01', $textcase->contenido);
+        $this->assertEquals('01', $textcase->contents);
     }
 }
 

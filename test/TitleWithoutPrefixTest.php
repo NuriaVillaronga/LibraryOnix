@@ -11,7 +11,7 @@ class TitleWithoutPrefixTest extends TestCase
                                                          <TitleWithoutPrefix textcase="01">Roseanna</TitleWithoutPrefix>');
         
         $titleWithoutPrefix = new TitleWithoutPrefix($nodoTitleWithoutPrefix);
-        $this->assertEquals('Roseanna', $titleWithoutPrefix->contenido);
+        $this->assertEquals('Roseanna', $titleWithoutPrefix->contents);
         $this->assertNotNull($titleWithoutPrefix->textcase);
     }
     
@@ -21,7 +21,7 @@ class TitleWithoutPrefixTest extends TestCase
                                                          <TitleWithoutPrefix>Roseanna</TitleWithoutPrefix>');
         
         $titleWithoutPrefix = new TitleWithoutPrefix($nodoTitleWithoutPrefix);
-        $this->assertEquals('Roseanna', $titleWithoutPrefix->contenido);
+        $this->assertEquals('Roseanna', $titleWithoutPrefix->contents);
         $this->assertNull($titleWithoutPrefix->textcase);
     }
 }

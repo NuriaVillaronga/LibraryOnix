@@ -11,7 +11,7 @@ class ResourceModeTest extends TestCase
                                                    <ResourceMode>06</ResourceMode>');
         
         $resourceMode = new ResourceMode($nodoResourceMode);
-        $this->assertEquals('06', $resourceMode->contenido);
+        $this->assertEquals('06', $resourceMode->contents);
     }
 }
 

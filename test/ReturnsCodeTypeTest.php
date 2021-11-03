@@ -11,7 +11,7 @@ class ReturnsCodeTypeTest extends TestCase
                                                       <ReturnsCodeType>02</ReturnsCodeType>');
         
         $returnsCodeType = new ReturnsCodeType($nodoReturnsCodeType);
-        $this->assertEquals('02', $returnsCodeType->contenido);
+        $this->assertEquals('02', $returnsCodeType->contents);
     }
 }
 

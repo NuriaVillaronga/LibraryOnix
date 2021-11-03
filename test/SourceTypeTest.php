@@ -11,7 +11,7 @@ class SourceTypeTest extends TestCase
                                                  <SourceType>01</SourceType>');
         
         $sourceType = new SourceType($nodoSourceType);
-        $this->assertEquals('01', $sourceType->contenido);
+        $this->assertEquals('01', $sourceType->contents);
     }
 }
 

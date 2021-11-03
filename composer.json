@@ -2,7 +2,7 @@
 	"name" : "library_onix/onix",
 	"description" : "onix library",
 	"require" : {
-		"php" : "^7.4"
+		"php": ">=7.2.5"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "^9.5"
@@ -10,7 +10,8 @@
 	"license" : "MIT",
 	"autoload" : {
 		"psr-4" : {
-			"OnixComponents\\" : "src/"
+			"OnixComponents\\" : "src/",
+			"DBOnix\\" : "db/"
 		}
 	},
 	"autoload-dev" : {

@@ -11,7 +11,7 @@ class SentDateTimeTest extends TestCase
                                                     <SentDateTime>20100510T1115-0400</SentDateTime>');
         
         $sentDateTime = new SentDateTime($nodoSentDateTime);
-        $this->assertEquals('20100510T1115-0400', $sentDateTime->contenido);
+        $this->assertEquals('20100510T1115-0400', $sentDateTime->contents);
     }
 }
 

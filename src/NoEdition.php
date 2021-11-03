@@ -6,11 +6,11 @@ use SimpleXMLElement;
 class NoEdition
 {
 
-    public string $contents;
+    public bool $contents;
 
     public function __construct(SimpleXMLElement $nodeNoEdition)
     {
-        $this->contents = (string) $nodeNoEdition;
+        $this->contents = (bool) $nodeNoEdition;
     }
 }
 

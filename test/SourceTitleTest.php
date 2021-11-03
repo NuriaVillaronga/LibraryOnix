@@ -11,7 +11,7 @@ class SourceTitleTest extends TestCase
                                                   <SourceTitle>Observer Magazine</SourceTitle>');
         
         $sourceTitle = new SourceTitle($nodoSourceTitle);
-        $this->assertEquals('Observer Magazine', $sourceTitle->contenido);
+        $this->assertEquals('Observer Magazine', $sourceTitle->contents);
     }
 }
 

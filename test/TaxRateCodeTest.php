@@ -11,7 +11,7 @@ class TaxRateCodeTest extends TestCase
                                                   <TaxRateCode>Z</TaxRateCode>');
         
         $taxRateCode = new TaxRateCode($nodoTaxRateCode);
-        $this->assertEquals('Z', $taxRateCode->contenido);
+        $this->assertEquals('Z', $taxRateCode->contents);
     }
 }
 

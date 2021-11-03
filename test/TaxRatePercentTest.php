@@ -11,7 +11,7 @@ class TaxRatePercentTest extends TestCase
                                                      <TaxRatePercent>0</TaxRatePercent>');
         
         $taxRatePercent = new TaxRatePercent($nodoTaxRatePercent);
-        $this->assertEquals('0', $taxRatePercent->contenido);
+        $this->assertEquals('0', $taxRatePercent->contents);
     }
 }
 

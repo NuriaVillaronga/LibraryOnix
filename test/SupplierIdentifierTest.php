@@ -15,7 +15,7 @@ class SupplierIdentifierTest extends TestCase
         
         $supplierIdentifier = new SupplierIdentifier($nodoSupplierIdentifier);
         $this->assertNotNull($supplierIdentifier->supplierIDType);
-        $this->assertNotNull($supplierIdentifier->iDValue);
+        $this->assertNotNull($supplierIdentifier->idValue);
     }
 }
 

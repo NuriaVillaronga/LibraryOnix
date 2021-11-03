@@ -18,7 +18,7 @@ class TitleWithoutPrefix
             $this->textcase = null;
         }
 
-        $this->contenido = (string) ($nodeTitleWithoutPrefix);
+        $this->contents = (string) ($nodeTitleWithoutPrefix);
     }
 }
 

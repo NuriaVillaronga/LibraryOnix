@@ -11,7 +11,7 @@ class ProductClassificationTypeTest extends TestCase
                                                                 <ProductClassificationType>03</ProductClassificationType>');
         
         $productClassificationType = new ProductClassificationType($nodoProductClassificationType);
-        $this->assertEquals('03', $productClassificationType->contenido);
+        $this->assertEquals('03', $productClassificationType->contents);
     }
 }
 

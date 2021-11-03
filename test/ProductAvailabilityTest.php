@@ -11,7 +11,7 @@ class ProductAvailabilityTest extends TestCase
                                                           <ProductAvailability>21</ProductAvailability>');
         
         $productAvailability = new ProductAvailability($nodoProductAvailability);
-        $this->assertEquals('21', $productAvailability->contenido); 
+        $this->assertEquals('21', $productAvailability->contents); 
     }
 }
 

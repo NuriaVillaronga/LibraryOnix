@@ -11,7 +11,7 @@ class PublisherIDTypeTest extends TestCase
                                                       <PublisherIDType>16</PublisherIDType>');
         
         $publisherIDType = new PublisherIDType($nodoPublisherIDType);
-        $this->assertEquals('16', $publisherIDType->contenido);
+        $this->assertEquals('16', $publisherIDType->contents);
     }
 }
 

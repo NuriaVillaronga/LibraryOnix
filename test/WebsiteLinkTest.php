@@ -11,7 +11,7 @@ class WebsiteLinkTest extends TestCase
                                                   <WebsiteLink>http://www.harpercollins.co.uk</WebsiteLink>');
         
         $websiteLink = new WebsiteLink($nodoWebsiteLink);
-        $this->assertEquals('http://www.harpercollins.co.uk', $websiteLink->contenido);
+        $this->assertEquals('http://www.harpercollins.co.uk', $websiteLink->contents);
     }
 }
 

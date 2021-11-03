@@ -48,7 +48,7 @@ class TitleElement
             $this->partNumber = null;
         }
 
-        if (isset($nodeTitleElement->NoPrefix) == true && empty($nodeTitleElement->NoPrefix) == true) {
+        if (isset($nodeTitleElement->NoPrefix) == true) {
             $this->noPrefix = new NoPrefix($nodeTitleElement->NoPrefix);
         } else {
             $this->noPrefix = null;

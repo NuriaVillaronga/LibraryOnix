@@ -11,7 +11,7 @@ class TelephoneNumberTest extends TestCase
                                                       <TelephoneNumber>+44 1417 723200</TelephoneNumber>');
         
         $telephoneNumber = new TelephoneNumber($nodoTelephoneNumber);
-        $this->assertEquals('+44 1417 723200', $telephoneNumber->contenido);
+        $this->assertEquals('+44 1417 723200', $telephoneNumber->contents);
     }
 }
 

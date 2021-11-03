@@ -11,7 +11,7 @@ class RecordReferenceTest extends TestCase
                                                       <RecordReference>com.globalbookinfo.onix.01734529</RecordReference>');
         
         $recordReference = new RecordReference($nodoRecordReference);
-        $this->assertEquals('com.globalbookinfo.onix.01734529', $recordReference->contenido);
+        $this->assertEquals('com.globalbookinfo.onix.01734529', $recordReference->contents);
     }
 }
 

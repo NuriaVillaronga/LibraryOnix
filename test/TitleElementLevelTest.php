@@ -11,7 +11,7 @@ class TitleElementLevelTest extends TestCase
                                                 <TitleElementLevel>02</TitleElementLevel>');
         
         $titleElementLevel = new TitleElementLevel($nodoTitleElementLevel);
-        $this->assertEquals('02', $titleElementLevel->contenido);
+        $this->assertEquals('02', $titleElementLevel->contents);
     }
 }
 

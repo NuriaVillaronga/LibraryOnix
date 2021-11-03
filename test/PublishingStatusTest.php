@@ -11,7 +11,7 @@ class PublishingStatusTest extends TestCase
                                                        <PublishingStatus>04</PublishingStatus>');
         
         $publishingStatus = new PublishingStatus($nodoPublishingStatus);
-        $this->assertEquals('04', $publishingStatus->contenido);
+        $this->assertEquals('04', $publishingStatus->contents);
     }
 }
 

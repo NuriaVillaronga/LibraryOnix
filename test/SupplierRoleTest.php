@@ -11,7 +11,7 @@ class SupplierRoleTest extends TestCase
                                                    <SupplierRole>01</SupplierRole>');
         
         $supplierRole = new SupplierRole($nodoSupplierRole);
-        $this->assertEquals('01', $supplierRole->contenido);
+        $this->assertEquals('01', $supplierRole->contents);
     }
 }
 

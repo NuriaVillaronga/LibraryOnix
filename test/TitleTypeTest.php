@@ -11,7 +11,7 @@ class TitleTypeTest extends TestCase
                                                 <TitleType>01</TitleType>');
         
         $titleType = new TitleType($nodoTitleType);
-        $this->assertEquals('01', $titleType->contenido);
+        $this->assertEquals('01', $titleType->contents);
     }
 }
 

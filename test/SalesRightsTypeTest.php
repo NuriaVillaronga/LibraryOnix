@@ -11,7 +11,7 @@ class SalesRightsTypeTest extends TestCase
                                                       <SalesRightsType>06</SalesRightsType>');
         
         $salesRightsType = new SalesRightsType($nodoSalesRightsType);
-        $this->assertEquals('06', $salesRightsType->contenido);
+        $this->assertEquals('06', $salesRightsType->contents);
     }
 }
 

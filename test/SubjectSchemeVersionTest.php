@@ -11,7 +11,7 @@ class SubjectSchemeVersionTest extends TestCase
                                                            <SubjectSchemeVersion>2017</SubjectSchemeVersion>');
         
         $subjectSchemeVersion = new SubjectSchemeVersion($nodoSubjectSchemeVersion);
-        $this->assertEquals('2017', $subjectSchemeVersion->contenido);
+        $this->assertEquals('2017', $subjectSchemeVersion->contents);
     }
 }
 

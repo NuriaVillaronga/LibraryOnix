@@ -11,7 +11,7 @@ class TextTypeTest extends TestCase
                                                <TextType>06</TextType>');
         
         $textType = new TextType($nodoTextType);
-        $this->assertEquals('06', $textType->contenido);
+        $this->assertEquals('06', $textType->contents);
     }
 }
 

@@ -11,7 +11,7 @@ class RecordSourceTypeTest extends TestCase
                                                        <RecordSourceType>04</RecordSourceType>');
         
         $recordSourceType = new RecordSourceType($nodoRecordSourceType);
-        $this->assertEquals('04', $recordSourceType->contenido);
+        $this->assertEquals('04', $recordSourceType->contents);
     }
 }
 

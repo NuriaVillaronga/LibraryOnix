@@ -11,7 +11,7 @@ class ResourceLinkTest extends TestCase
                                                    <ResourceLink>http://www.harpercollins.co.uk/covers/9780007232833.jpg</ResourceLink>');
         
         $resourceLink = new ResourceLink($nodoResourceLink);
-        $this->assertEquals('http://www.harpercollins.co.uk/covers/9780007232833.jpg', $resourceLink->contenido);
+        $this->assertEquals('http://www.harpercollins.co.uk/covers/9780007232833.jpg', $resourceLink->contents);
     }
 }
 

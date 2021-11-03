@@ -11,7 +11,7 @@ class ProductClassificationCodeTest extends TestCase
                                                                 <ProductClassificationCode>49019900</ProductClassificationCode>');
         
         $productClassificationCode = new ProductClassificationCode($nodoProductClassificationCode);
-        $this->assertEquals('49019900', $productClassificationCode->contenido);
+        $this->assertEquals('49019900', $productClassificationCode->contents);
     }
 }
 

@@ -11,7 +11,7 @@ class SubjectHeadingTextTest extends TestCase
                                                          <SubjectHeadingText>Martin Beck; Roseanna McGraw; Lake Vättern</SubjectHeadingText>');
         
         $subjectHeadingText = new SubjectHeadingText($nodoSubjectHeadingText);
-        $this->assertEquals('Martin Beck; Roseanna McGraw; Lake Vättern', $subjectHeadingText->contenido);
+        $this->assertEquals('Martin Beck; Roseanna McGraw; Lake Vättern', $subjectHeadingText->contents);
     }
 }
 

@@ -11,7 +11,7 @@ class WorkRelationCodeTest extends TestCase
                                                        <WorkRelationCode>01</WorkRelationCode>');
         
         $workRelationCode = new WorkRelationCode($nodoWorkRelationCode);
-        $this->assertEquals('01', $workRelationCode->contenido);
+        $this->assertEquals('01', $workRelationCode->contents);
     }
 }
 

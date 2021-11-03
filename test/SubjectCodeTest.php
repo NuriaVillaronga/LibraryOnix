@@ -11,7 +11,7 @@ class SubjectCodeTest extends TestCase
                                                   <SubjectCode>FIC022000</SubjectCode>');
         
         $subjectCode = new SubjectCode($nodoSubjectCode);
-        $this->assertEquals('FIC022000', $subjectCode->contenido);
+        $this->assertEquals('FIC022000', $subjectCode->contents);
     }
 }
 
