@@ -5,7 +5,6 @@ use OnixComponents\ProductList;
 
 class Repository 
 {
-
     function resourceVersionFeature($resourceVersionFeatureList): string
     {
         $arrayResourceVersionFeature = $resourceVersionFeatureList->arrayResourceVersionFeature;

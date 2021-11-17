@@ -20,9 +20,17 @@ class Contributor
 
     public ?FromLanguagelist $fromLanguageList; // (0,n) - 
 
+    public ?PersonName $personName; // (0,1) -
+
     public function __construct(SimpleXMLElement $nodeContributor)
     {
         $this->contributorRoleList = new ContributorRoleList($nodeContributor);
+
+        if (isset($nodeContributor->PersonName) == true) {
+            $this->personName = new PersonName($nodeContributor->PersonName);
+        } else {
+            $this->personName = null;
+        }
 
         if (isset($nodeContributor->SequenceNumber) == true) {
             $this->sequenceNumber = new SequenceNumber($nodeContributor->SequenceNumber);
