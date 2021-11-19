@@ -6,7 +6,7 @@ use SimpleXMLElement;
 class CopyrightStatement
 {
     
-    public CopyrightYearList $CopyrightYearList; //(1,n)
+    public CopyrightYearList $copyrightYearList; //(1,n)
     
     public function __construct(SimpleXMLElement $nodeCopyrightStatement)
     {
