@@ -19,6 +19,8 @@ class TitleElement
     public ?NoPrefix $noPrefix; //(0,1) -> Bandera, xml vacio
     
     public ?TitleText $titleText; //(0,1)
+
+    public ?Subtitle $subtitle; //(0,1)
     
     public function __construct(SimpleXMLElement $nodeTitleElement)
     {
@@ -28,6 +30,12 @@ class TitleElement
             $this->sequenceNumber = new SequenceNumber($nodeTitleElement->SequenceNumber);
         } else {
             $this->sequenceNumber = null;
+        }
+
+        if (isset($nodeTitleElement->Subtitle) == true) {
+            $this->subtitle = new Subtitle($nodeTitleElement->Subtitle);
+        } else {
+            $this->subtitle = null;
         }
 
         if (isset($nodeTitleElement->TitlePrefix) == true) {

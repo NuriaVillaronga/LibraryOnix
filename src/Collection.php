@@ -10,6 +10,8 @@ class Collection
 
     public ?TitleDetailList $titleDetailList;//0,n
 
+    public ?CollectionSequenceList $collectionSequenceList;//0,n
+
     public function __construct(SimpleXMLElement $nodeCollection)
     {
         $this->collectionType = new CollectionType($nodeCollection->CollectionType);
@@ -18,6 +20,12 @@ class Collection
             $this->titleDetailList = new TitleDetailList($nodeCollection);
         } else {
             $this->titleDetailList = null;
+        }
+
+        if (isset($nodeCollection->CollectionSequence) == true) {
+            $this->collectionSequenceList = new CollectionSequenceList($nodeCollection);
+        } else {
+            $this->collectionSequenceList = null;
         }
     }
 }

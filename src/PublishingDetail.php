@@ -17,6 +17,8 @@ class PublishingDetail
     public ?ImprintList $imprintList; //(0,n)
     
     public ?PublisherList $publisherList; //(0,n)
+
+    public ?CopyrightStatementList $copyrightStatementList; //(0,n)
     
     public ?PublishingDateList $publishingDateList; //(0,n)
     
@@ -28,6 +30,12 @@ class PublishingDetail
             $this->publishingStatus = new PublishingStatus($nodePublishingDetail->PublishingStatus);
         } else {
             $this->publishingStatus = null;
+        }
+
+        if (isset($nodePublishingDetail->CopyrightStatement) == true) {
+            $this->copyrightStatementList = new CopyrightStatementList($nodePublishingDetail);
+        } else {
+            $this->copyrightStatementList = null;
         }
 
         if (isset($nodePublishingDetail->CountryOfPublication) == true) {

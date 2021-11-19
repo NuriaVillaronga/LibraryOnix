@@ -14,6 +14,8 @@ class Product
     public ?RecordSourceName $recordSourceName; //(0,1)-
     
     public ?DescriptiveDetail $descriptiveDetail; //(0,1)
+
+    public ?ContentDetail $contentDetail; //(0,1)
     
     public ?CollateralDetail $collateralDetail; //(0,1)
     
@@ -32,6 +34,12 @@ class Product
         $this->recordReference = new RecordReference($nodeProduct->RecordReference);
         $this->notificationType = new NotificationType($nodeProduct->NotificationType);
         $this->productIdentifierList = new ProductIdentifierList($nodeProduct);
+
+        if (isset($nodeProduct->ContentDetail) == true) {
+            $this->contentDetail = new ContentDetail($nodeProduct->ContentDetail);
+        } else {
+            $this->contentDetail = null;
+        }
 
         if (isset($nodeProduct->ProductSupply) == true) {
             $this->productSupplyList = new ProductSupplyList($nodeProduct);

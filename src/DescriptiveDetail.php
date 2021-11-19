@@ -24,6 +24,12 @@ class DescriptiveDetail
 
     public ?CountryOfManufacture $countryOfManufacture; // (0,1) -
 
+    public ?EditionNumber $editionNumber; // (0,1) 
+
+    public ?ProductPackaging $productPackaging; // (0,1)
+
+    public ?PrimaryContentType $primaryContentType; // (0,1)
+
     public ?MeasureList $measureList; // (0,n)
 
     public ?ProductClassificationList $productClassificationList; // (0,n)
@@ -35,6 +41,8 @@ class DescriptiveDetail
     public ?SubjectList $subjectList; // (0,n)
 
     public ?AudienceList $audienceList; // (0,n)
+
+    public ?EpubTechnicalProtectionList $epubTechnicalProtection; // (0,n)
 
     public function __construct(SimpleXMLElement $nodeDescriptiveDetail)
     {
@@ -52,6 +60,30 @@ class DescriptiveDetail
             $this->countryOfManufacture = new CountryOfManufacture($nodeDescriptiveDetail->CountryOfManufacture);
         } else {
             $this->countryOfManufacture = null;
+        }
+
+        if (isset($nodeDescriptiveDetail->EditionNumber) == true) {
+            $this->editionNumber = new EditionNumber($nodeDescriptiveDetail->EditionNumber);
+        } else {
+            $this->editionNumber = null;
+        }
+        
+        if (isset($nodeDescriptiveDetail->PrimaryContentType) == true) {
+            $this->primaryContentType = new PrimaryContentType($nodeDescriptiveDetail->PrimaryContentType);
+        } else {
+            $this->primaryContentType = null;
+        }
+
+        if (isset($nodeDescriptiveDetail->ProductPackaging) == true) {
+            $this->productPackaging = new ProductPackaging($nodeDescriptiveDetail->ProductPackaging);
+        } else {
+            $this->productPackaging = null;
+        }
+
+        if (isset($nodeDescriptiveDetail->EpubTechnicalProtection) == true) {
+            $this->epubTechnicalProtectionList = new EpubTechnicalProtectionList($nodeDescriptiveDetail);
+        } else {
+            $this->epubTechnicalProtectionList = null;
         }
 
         if (isset($nodeDescriptiveDetail->Collection) == true) {
