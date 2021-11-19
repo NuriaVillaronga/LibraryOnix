@@ -42,7 +42,7 @@ class DescriptiveDetail
 
     public ?AudienceList $audienceList; // (0,n)
 
-    public ?EpubTechnicalProtectionList $epubTechnicalProtection; // (0,n)
+    public ?EpubTechnicalProtectionList $epubTechnicalProtectionList; // (0,n)
 
     public function __construct(SimpleXMLElement $nodeDescriptiveDetail)
     {
