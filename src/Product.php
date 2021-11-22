@@ -28,6 +28,8 @@ class Product
     public ?RecordSourceIdentifierList $recordSourceIdentifierList; //(0,n)
     
     public ProductIdentifierList $productIdentifierList; //(1,n) -
+
+    public ?BarcodeList $barcodeList; // (0,n)
     
     public function __construct(SimpleXMLElement $nodeProduct)
     {
@@ -39,6 +41,12 @@ class Product
             $this->contentDetail = new ContentDetail($nodeProduct->ContentDetail);
         } else {
             $this->contentDetail = null;
+        }
+
+        if (isset($nodeProduct->Barcode) == true) {
+            $this->barcodeList = new BarcodeList($nodeProduct);
+        } else {
+            $this->barcodeList = null;
         }
 
         if (isset($nodeProduct->ProductSupply) == true) {
