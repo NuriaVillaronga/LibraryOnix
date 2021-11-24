@@ -1,4 +1,5 @@
 <?php
+
 namespace OnixComponents;
 
 use SimpleXMLElement;
@@ -13,4 +14,3 @@ class dateformat
         $this->contents = (string) ($nodeAttributeDateformat_nodeDateformat);
     }
 }
-

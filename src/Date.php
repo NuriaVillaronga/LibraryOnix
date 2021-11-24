@@ -19,7 +19,7 @@ class Date
             $this->dateformat = null;
         }
 
-        $this->contents = date($nodeDate);
+        $this->contents = DateTime::createFromFormat($this->dateformat, $nodeDate);
     }
 }
 
