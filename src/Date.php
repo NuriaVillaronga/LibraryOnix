@@ -17,16 +17,21 @@ class Date
         if (isset($nodeDate['dateformat']) == true) {
             $this->dateformat = new dateformat($nodeDate['dateformat']);
         } else {
-            $this->dateformat = "Ymd";
+            $this->dateformat = null;
         }
 
         if (isset($nodoPublishingDate->DateFormat) == true) {
             $this->dateformat = new dateformat($nodoPublishingDate->DateFormat);
         } else {
-            $this->dateformat = "Ymd";
+            $this->dateformat = null;
         }
 
-        $formato = (string) $this->dateformat;
+        if ($this->dateformat == null) {
+            $formato = "Ymd";
+        }
+        else {
+            $formato = (string) $this->dateformat;
+        }
 
         $this->contents = DateTime::createFromFormat($formato, $nodeDate);
 
