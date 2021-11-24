@@ -33,6 +33,9 @@ class Date
             $formato = (string) $this->dateformat;
         }
 
+        var_dump($formato);
+        die();
+
         $this->contents = DateTime::createFromFormat($formato, (string)$nodeDate);
 
     }
