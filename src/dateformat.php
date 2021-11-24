@@ -10,7 +10,7 @@ class dateformat
     public string $contents;
 
     public function __construct(SimpleXMLElement $nodeAttributeDateformat_nodeDateformat)
-    {
+    {/*
         $this->contents = (string) ($nodeAttributeDateformat_nodeDateformat);
 
         if ($this->contents == "00"){
@@ -71,6 +71,6 @@ class dateformat
         else if ($this->contents == "32"){
             $this->contents = ""; //Cadena de texto (H)
         }
-        */
-    }
+        
+    */}
 }
