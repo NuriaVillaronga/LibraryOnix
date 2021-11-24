@@ -1,6 +1,7 @@
 <?php
 namespace OnixComponents;
 
+use DateTime;
 use SimpleXMLElement;
 
 class Date
@@ -8,7 +9,7 @@ class Date
 
     public ?dateformat $dateformat; // (0,1)
 
-    public string $contents;
+    public DateTime $contents;
 
     public function __construct(SimpleXMLElement $nodeDate)
     {
@@ -18,7 +19,7 @@ class Date
             $this->dateformat = null;
         }
 
-        $this->contents = (string) $nodeDate;
+        $this->contents = $nodeDate;
     }
 }
 
