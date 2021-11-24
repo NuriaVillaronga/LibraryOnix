@@ -19,7 +19,7 @@ class Date
             $this->dateformat = null;
         }
 
-        $this->contents = $nodeDate;
+        $this->contents = date($nodeDate);
     }
 }
 
