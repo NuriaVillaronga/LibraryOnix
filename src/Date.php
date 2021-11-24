@@ -12,10 +12,9 @@ class Date
 
     public function __construct(SimpleXMLElement $nodoPublishingDate)
     {
-        $nodeDate = $nodoPublishingDate->Date;
 
         if (isset($nodeDate['dateformat']) == true) {
-            $this->dateformat = new dateformat($nodeDate['dateformat']);
+            $this->dateformat = new dateformat($nodoPublishingDate->Date['dateformat']);
         } else {
             $this->dateformat = null;
         }
@@ -33,10 +32,9 @@ class Date
             $formato = (string) $this->dateformat;
         }
 
-        var_dump($formato);
-        die();
+        $nodeDate = (string) $nodoPublishingDate->Date;
 
-        $this->contents = DateTime::createFromFormat($formato, (string)$nodeDate);
+        $this->contents = DateTime::createFromFormat($formato, $nodeDate);
 
     }
 }
