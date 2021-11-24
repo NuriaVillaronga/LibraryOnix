@@ -33,7 +33,7 @@ class Date
             $formato = (string) $this->dateformat;
         }
 
-        $this->contents = DateTime::createFromFormat($formato, $nodeDate);
+        $this->contents = DateTime::createFromFormat($formato, (string)$nodeDate);
 
     }
 }
