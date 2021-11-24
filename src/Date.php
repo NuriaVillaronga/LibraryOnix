@@ -23,10 +23,12 @@ class Date
         if (isset($nodoPublishingDate->DateFormat) == true) {
             $this->dateformat = new dateformat($nodoPublishingDate->DateFormat);
         } else {
-            $this->dateFormat = "Ymd";
+            $this->dateformat = "Ymd";
         }
 
-        $this->contents = DateTime::createFromFormat($this->dateformat, $nodeDate);
+        $formato = (string) $this->dateformat;
+
+        $this->contents = DateTime::createFromFormat($formato, $nodeDate);
 
     }
 }
