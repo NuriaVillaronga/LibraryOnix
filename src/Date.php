@@ -6,11 +6,11 @@ use SimpleXMLElement;
 
 class Date
 {
-    /*
     public ?dateformat $dateformat; // (0,1)
 
     public string $contents;
-    //public DateTime $valor;
+    
+    public ?DateTime $valor;
 
     public function __construct(SimpleXMLElement $nodoPublishingDate)
     {
@@ -26,8 +26,17 @@ class Date
             $this->dateformat = new dateformat();
         }
 
-        //$this->valor = DateTime::createFromFormat($this->dateformat->contents, $this->contents);
+        $fecha = DateTime::createFromFormat($this->dateformat->contents, $this->contents);
+
+        if (isset($fecha) == true) {
+            $this->valor = $fecha;
+        } 
+        else {
+            $this->valor = null;
+        }
+
+        var_dump($this->valor);
+        die(); 
     }
-    */
 }
 

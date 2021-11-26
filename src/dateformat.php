@@ -6,7 +6,6 @@ use SimpleXMLElement;
 
 class dateformat
 {
-    /*
     public string $contents;
 
     public function __construct(?SimpleXMLElement $nodeAttributeDateformat_nodeDateformat = null)
@@ -74,8 +73,6 @@ class dateformat
         else if ($this->contents == "32"){
             $this->contents = ""; //Cadena de texto (H)
         }
-        
-        
+       */   
     }
-    */
 }

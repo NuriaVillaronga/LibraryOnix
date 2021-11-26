@@ -9,13 +9,14 @@ class DateTest extends TestCase
     public function testDate(){
         
         $nodoDate = simplexml_load_string('<?xml version="1.0" encoding="UTF-8"?>
-                                                    <Date dateformat="05">20210125</Date>');
+                                                <PublishingDate>
+                                                    <Date dateformat="00">20211112</Date>
+                                                </PublishingDate>');
         
-        $date = new Date($nodoDate->Date);
-        var_dump($date->contents);
-        die();
+        $date = new Date($nodoDate);
+
         //$this->assertNotNull($date->dateformat);
-        //$this->assertEquals('20210125',$date->contents);
+        $this->assertEquals('20211112',$date->contents);
     }
     
     /*
