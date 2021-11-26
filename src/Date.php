@@ -22,9 +22,7 @@ class Date
             $this->dateformat = new dateformat();
         }
 
-        $nodeDate = (string) $nodoPublishingDate->Date;
-
-        $this->contents = DateTime::createFromFormat($this->dateformat->contents, $nodeDate);
+        $this->contents = DateTime::createFromFormat($this->dateformat->contents, (string)($nodoPublishingDate->Date));
     }
 }
 
