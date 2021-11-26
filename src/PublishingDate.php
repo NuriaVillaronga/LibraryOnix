@@ -13,7 +13,6 @@ class PublishingDate
     public function __construct(SimpleXMLElement $nodoPublishingDate)
     {
         $this->publishingDateRole = new PublishingDateRole($nodoPublishingDate->PublishingDateRole);
-        //$this->date = new Date($nodoPublishingDate->Date);
         $this->date = new Date($nodoPublishingDate);
     }
 }

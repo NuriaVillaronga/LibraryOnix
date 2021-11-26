@@ -9,8 +9,8 @@ class dateformat
 
     public string $contents;
 
-    public function __construct(SimpleXMLElement $nodeAttributeDateformat_nodeDateformat)
-    {/*
+    public function __construct(?SimpleXMLElement $nodeAttributeDateformat_nodeDateformat = null)
+    {
         $this->contents = (string) ($nodeAttributeDateformat_nodeDateformat);
 
         if ($this->contents == "00"){
@@ -52,6 +52,9 @@ class dateformat
         else if ($this->contents == "25"){
             $this->contents = "Y"; //YYYY (Calendario Hijri)
         }
+        else if ($this->contents == null){
+            $this->contents = "Ymd"; //YYYY (Calendario Hijri)
+        }
         /*
         if ($this->contents == "03"){
             $this->contents = ""; //AAAAT -> trimestre ( T = 1,2,3,4)
@@ -71,6 +74,7 @@ class dateformat
         else if ($this->contents == "32"){
             $this->contents = ""; //Cadena de texto (H)
         }
+        */
         
-    */}
+    }
 }
