@@ -6,7 +6,6 @@ use SimpleXMLElement;
 
 class Date
 {
-    /*
     public ?dateformat $dateformat; // (0,1)
 
     public string $contents;
@@ -36,6 +35,5 @@ class Date
             $this->valor = null;
         }
     }
-    */
 }
 
