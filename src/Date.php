@@ -12,24 +12,19 @@ class Date
     
     public ?DateTime $valor;
 
-    public function __construct(SimpleXMLElement $nodoPublishingDate)
+    public function __construct(SimpleXMLElement $nodeDate) 
     {
-        $this->contents = (string)($nodoPublishingDate->Date);
-
-        if (isset($nodoPublishingDate->Date['dateformat']) == true) {
-            $this->dateformat = new dateformat($nodoPublishingDate->Date['dateformat']);
+        if (isset($nodeDate['dateformat']) == true) {
+            $this->dateformat = new dateformat($nodeDate['dateformat']);
         } 
-        elseif(isset($nodoPublishingDate->DateFormat) == true) {
-            $this->dateformat = new dateformat($nodoPublishingDate->DateFormat);
-        }
         else {
             $this->dateformat = new dateformat();
         }
 
-        $fecha = DateTime::createFromFormat($this->dateformat->contents, $this->contents);
-
-        if (isset($fecha) == true) {
-            $this->valor = $fecha;
+        $this->contents = (string)($nodeDate);
+        
+        if (DateTime::createFromFormat($this->dateformat->contents, $this->contents) != null) {
+            $this->valor = DateTime::createFromFormat($this->dateformat->contents, $this->contents);
         } 
         else {
             $this->valor = null;

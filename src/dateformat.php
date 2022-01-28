@@ -12,47 +12,47 @@ class dateformat
     {
         $this->contents = (string) ($nodeAttributeDateformat_nodeDateformat);
 
-        if ($this->contents == "00"){
+        if ($this->contents == "00"){ 
             $this->contents = "Ymd"; //AAAAMMDD
         }
-        else if ($this->contents == "01"){
+        if ($this->contents == "01"){
             $this->contents = "Ym"; //AAAAMM
         }
-        else if ($this->contents == "02"){
+        if ($this->contents == "02"){ 
             $this->contents = "oW"; //AAAASS siendo S numero de la semana del año (o)
         }
-        else if ($this->contents == "05"){
+        if ($this->contents == "05"){
             $this->contents = "Y"; //AAAA
         }
-        else if ($this->contents == "06"){
+        if ($this->contents == "06"){
             $this->contents = "YmdYmd"; //AAAAMMDDAAAAMMDD
         }
-        else if ($this->contents == "07"){
+        if ($this->contents == "07"){
             $this->contents = "YmYm"; //AAAAMMAAAAMM
         }
-        else if ($this->contents == "08"){
+        if ($this->contents == "08"){
             $this->contents = "oWoW"; //formato AAAASSAAAASS
         }
-        else if ($this->contents == "11"){
+        if ($this->contents == "11"){
             $this->contents = "YY"; //AAAAAAAA
         }
-        else if ($this->contents == "13"){
+        if ($this->contents == "13"){
             $this->contents = "YmdHi"; //YYYYMMDDThhmm
         }
-        else if ($this->contents == "14"){
+        if ($this->contents == "14"){
             $this->contents = "YmdHis"; //YYYYMMDDThhmmss
         }
-        else if ($this->contents == "20"){
+        if ($this->contents == "20"){
             $this->contents = "Ymd"; //YYYYMMDD (Calendario Hijri)
         }
-        else if ($this->contents == "21"){
+        if ($this->contents == "21"){
             $this->contents = "Ym"; //YYYYMM (Calendario Hijri)
         }
-        else if ($this->contents == "25"){
+        if ($this->contents == "25"){
             $this->contents = "Y"; //YYYY (Calendario Hijri)
         }
-        else if ($this->contents == null){
-            $this->contents = "Ymd"; //YYYY (Calendario Hijri)
+        if ($this->contents == null){
+            $this->contents = "Nulo"; 
         }
         /*
         if ($this->contents == "03"){
@@ -67,10 +67,10 @@ class dateformat
         if ($this->contents == "10"){
             $this->contents = ""; //AAAAEAAAAE
         }
-        else if ($this->contents == "12"){
+        if ($this->contents == "12"){
             $this->contents = ""; //Texto. Para fechas complejas, aproximadas o inciertas, o para fechas antes de la era común (AEC o a.C.)
         }
-        else if ($this->contents == "32"){
+        if ($this->contents == "32"){
             $this->contents = ""; //Cadena de texto (H)
         }
        */   
