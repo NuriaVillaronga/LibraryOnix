@@ -34,9 +34,6 @@ class Date
         else {
             $this->valor = null;
         }
-
-        var_dump($this->valor);
-        die(); 
     }
 }
 
