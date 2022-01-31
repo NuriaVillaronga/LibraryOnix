@@ -15,7 +15,7 @@ class PublishingDate
     public function __construct(SimpleXMLElement $nodePublishingDate) 
     {
         $this->publishingDateRole = new PublishingDateRole($nodePublishingDate->PublishingDateRole);
-        $this->dateFormat = new PublishingDateRole($nodePublishingDate->DateFormat);
+        $this->dateFormat = new DateFormat($nodePublishingDate->DateFormat);
         $this->date = new Date($nodePublishingDate->Date);
     }
 }
