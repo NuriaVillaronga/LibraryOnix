@@ -8,12 +8,15 @@ class PublishingDate
 
     public PublishingDateRole $publishingDateRole; // (1)
 
+    public DateFormat $dateFormat;
+
     public Date $date; // (1)
 
-    public function __construct(SimpleXMLElement $nodoPublishingDate)
+    public function __construct(SimpleXMLElement $nodePublishingDate) 
     {
-        $this->publishingDateRole = new PublishingDateRole($nodoPublishingDate->PublishingDateRole);
-        $this->date = new Date($nodoPublishingDate->Date);
+        $this->publishingDateRole = new PublishingDateRole($nodePublishingDate->PublishingDateRole);
+        $this->dateFormat = new PublishingDateRole($nodePublishingDate->DateFormat);
+        $this->date = new Date($nodePublishingDate->Date);
     }
 }
 
