@@ -4,13 +4,13 @@ namespace OnixComponents;
 
 use SimpleXMLElement;
 
-class dateformat
+class DateFormatNode
 {
     public string $contents;
 
-    public function __construct(?SimpleXMLElement $nodeAttributeDateformat_nodeDateformat = null)
+    public function __construct(SimpleXMLElement $nodeDateFormat) 
     {
-        $this->contents = (string) ($nodeAttributeDateformat_nodeDateformat);
+        $this->contents = (string) ($nodeDateFormat);
 
         if ($this->contents == "00"){ 
             $this->contents = "Ymd"; //AAAAMMDD
@@ -50,9 +50,6 @@ class dateformat
         }
         if ($this->contents == "25"){
             $this->contents = "Y"; //YYYY (Calendario Hijri)
-        }
-        if ($this->contents == null){
-            $this->contents = "Nulo"; 
         }
         /*
         if ($this->contents == "03"){

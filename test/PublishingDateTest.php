@@ -10,12 +10,14 @@ class PublishingDateTest extends TestCase
         $nodoPublishingDate = simplexml_load_string('<?xml version="1.0" encoding="UTF-8"?>
                                                      <PublishingDate>
                                         				<PublishingDateRole>01</PublishingDateRole>
-                                        				<Date dateformat="00">20060807</Date>
+                                        				<Date>20060807</Date>
+                                                        <DateFormat>00</DateFormat>
                                         			 </PublishingDate>');
         
         $publishingDate = new PublishingDate($nodoPublishingDate);
         $this->assertNotNull($publishingDate->publishingDateRole);
         $this->assertNotNull($publishingDate->date);
+        $this->assertNotNull($publishingDate->dateFormat);
     }
 }
 

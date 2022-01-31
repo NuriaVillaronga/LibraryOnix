@@ -1,7 +1,6 @@
 <?php
 namespace test;
 use OnixComponents\Date;
-use OnixComponents\dateformat;
 use PHPUnit\Framework\TestCase;
 
 class DateTest extends TestCase

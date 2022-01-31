@@ -8,7 +8,7 @@ class PublishingDate
 
     public PublishingDateRole $publishingDateRole; // (1)
 
-    public DateFormat $dateFormat;
+    public ?DateFormatNode $dateFormat;
 
     public Date $date; // (1)
 
@@ -17,7 +17,7 @@ class PublishingDate
         $this->publishingDateRole = new PublishingDateRole($nodePublishingDate->PublishingDateRole);
 
         if (isset($nodePublishingDate->DateFormat) == true) {
-            $this->dateFormat = new DateFormat($nodePublishingDate->DateFormat);
+            $this->dateFormat = new DateFormatNode($nodePublishingDate->DateFormat);
         } else {
             $this->dateFormat = null;
         }

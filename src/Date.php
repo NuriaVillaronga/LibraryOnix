@@ -6,7 +6,7 @@ use SimpleXMLElement;
 
 class Date
 {
-    public ?dateformat $dateformat; // (0,1)
+    public ?dateformatAttr $dateformat; // (0,1)
 
     public string $contents;
     
@@ -15,10 +15,10 @@ class Date
     public function __construct(SimpleXMLElement $nodeDate) 
     {
         if (isset($nodeDate['dateformat']) == true) {
-            $this->dateformat = new dateformat($nodeDate['dateformat']);
+            $this->dateformat = new dateformatAttr($nodeDate['dateformat']);
         } 
         else {
-            $this->dateformat = new dateformat();
+            $this->dateformat = new dateformatAttr();
         }
 
         $this->contents = (string)($nodeDate);
