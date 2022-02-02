@@ -26,9 +26,9 @@ class RelatedProduct
         }
 
         if (isset($nodeRelatedProduct->ProductForm) == true) {
-            $this->roductForm = new ProductForm($nodeRelatedProduct->ProductForm);
+            $this->productForm = new ProductForm($nodeRelatedProduct->ProductForm);
         } else {
-            $this->roductForm = null;
+            $this->productForm = null;
         }
     }
 }
