@@ -42,6 +42,10 @@ class DescriptiveDetail
 
     public ?AudienceList $audienceList; // (0,n)
 
+    public ?AudienceCodeList $audienceCodeList; // (0,n)
+
+    public ?AudienceRangeList $audienceRangeList; // (0,n)
+
     public ?EpubTechnicalProtectionList $epubTechnicalProtectionList; // (0,n)
 
     public function __construct(SimpleXMLElement $nodeDescriptiveDetail)
@@ -49,6 +53,18 @@ class DescriptiveDetail
         $this->titleDetailList = new TitleDetailList($nodeDescriptiveDetail);
         $this->productComposition = new ProductComposition($nodeDescriptiveDetail->ProductComposition);
         $this->productForm = new ProductForm($nodeDescriptiveDetail->ProductForm);
+
+        if (isset($nodeDescriptiveDetail->AudienceCode) == true) {
+            $this->audienceCodeList = new AudienceCodeList($nodeDescriptiveDetail);
+        } else {
+            $this->audienceCodeList = null;
+        }
+
+        if (isset($nodeDescriptiveDetail->AudienceRange) == true) {
+            $this->audienceRangeList = new AudienceRangeList($nodeDescriptiveDetail);
+        } else {
+            $this->audienceRangeList = null;
+        }
 
         if (isset($nodeDescriptiveDetail->NoEdition) == true) {
             $this->noEdition = new NoEdition($nodeDescriptiveDetail->NoEdition);
