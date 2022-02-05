@@ -9,6 +9,8 @@ class SupplyDetail
     public ?ReturnsConditionsList $returnsConditionsList; //(0,n)
     
     public ?PriceList $priceList; //(0,n)
+
+    public ?StockList $stockList; //(0,n)
     
     public ?PackQuantity $packQuantity; //(0,1)
     
@@ -18,6 +20,12 @@ class SupplyDetail
     
     public function __construct(SimpleXMLElement $nodeSupplyDetail)
     {
+        if (isset($nodeSupplyDetail->Stock) == true) {
+            $this->stockList = new StockList($nodeSupplyDetail);
+        } else {
+            $this->stockList = null;
+        }
+
         $this->supplier = new Supplier($nodeSupplyDetail->Supplier);
         $this->productAvailability = new ProductAvailability($nodeSupplyDetail->ProductAvailability);
 

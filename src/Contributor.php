@@ -5,6 +5,11 @@ use SimpleXMLElement;
 
 class Contributor
 {
+    public ?PersonNameInverted $personNameInverted; // (0,1) -
+
+    public ?CorporateName $corporateName; // (0,1) -
+
+    public ?ContributorPlaceList $contributorPlaceList; // (0,n) -
 
     public ?SequenceNumber $sequenceNumber; // (0,1) -
 
@@ -18,12 +23,38 @@ class Contributor
 
     public ?BiographicalNoteList $biographicalNoteList; // (0,n) -
 
-    public ?FromLanguagelist $fromLanguageList; // (0,n) - 
+    public ?FromLanguageList $fromLanguageList; // (0,n) -  
+
+    public ?PrizeList $prizeList; // (0,n) -
 
     public ?PersonName $personName; // (0,1) -
 
     public function __construct(SimpleXMLElement $nodeContributor)
     {
+        if (isset($nodeContributor->Prize) == true) {
+            $this->prizeList = new PrizeList($nodeContributor);
+        } else {
+            $this->prizeList = null;
+        }
+
+        if (isset($nodeContributor->CorporateName) == true) {
+            $this->corporateName = new CorporateName($nodeContributor->CorporateName);
+        } else {
+            $this->corporateName = null;
+        }
+
+        if (isset($nodeContributor->PersonNameInverted) == true) {
+            $this->personNameInverted = new PersonNameInverted($nodeContributor->PersonNameInverted);
+        } else {
+            $this->personNameInverted = null;
+        }
+
+        if (isset($nodeContributor->ContributorPlace) == true) {
+            $this->contributorPlaceList = new ContributorPlaceList($nodeContributor);
+        } else {
+            $this->contributorPlaceList = null;
+        }
+
         $this->contributorRoleList = new ContributorRoleList($nodeContributor);
 
         if (isset($nodeContributor->PersonName) == true) {

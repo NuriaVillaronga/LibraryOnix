@@ -6,6 +6,8 @@ use SimpleXMLElement;
 class DescriptiveDetail
 {
 
+    public ?AncillaryContentList $ancillaryContentList; // (0,n) -
+
     public ?ContributorList $contributorList; // (0,n) - 
 
     public TitleDetailList $titleDetailList; // (1,n) -
@@ -53,6 +55,12 @@ class DescriptiveDetail
         $this->titleDetailList = new TitleDetailList($nodeDescriptiveDetail);
         $this->productComposition = new ProductComposition($nodeDescriptiveDetail->ProductComposition);
         $this->productForm = new ProductForm($nodeDescriptiveDetail->ProductForm);
+
+        if (isset($nodeDescriptiveDetail->AncillaryContent) == true) {
+            $this->ancillaryContentList = new AncillaryContentList($nodeDescriptiveDetail);
+        } else {
+            $this->ancillaryContentList = null;
+        }
 
         if (isset($nodeDescriptiveDetail->AudienceCode) == true) {
             $this->audienceCodeList = new AudienceCodeList($nodeDescriptiveDetail);
