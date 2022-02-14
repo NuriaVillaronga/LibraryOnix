@@ -25,18 +25,10 @@ class Contributor
 
     public ?FromLanguageList $fromLanguageList; // (0,n) -  
 
-    public ?PrizeList $prizeList; // (0,n) -
-
     public ?PersonName $personName; // (0,1) -
 
     public function __construct(SimpleXMLElement $nodeContributor)
     {
-        if (isset($nodeContributor->Prize) == true) {
-            $this->prizeList = new PrizeList($nodeContributor);
-        } else {
-            $this->prizeList = null;
-        }
-
         if (isset($nodeContributor->CorporateName) == true) {
             $this->corporateName = new CorporateName($nodeContributor->CorporateName);
         } else {
