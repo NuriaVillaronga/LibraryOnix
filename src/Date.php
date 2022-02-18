@@ -6,17 +6,17 @@ use SimpleXMLElement;
 
 class Date
 {
-    public ?dateformatAttr $dateformat; // (0,1)
-
     public string $contents;
     
     public ?DateTime $valor;
 
     public ?DateFormatNode $dateFormat;
 
+    public ?dateformatAttr $dateformat; // (0,1)
+
     private function getDateValue($formato) {
         if (DateTime::createFromFormat($this->$formato->contents, $this->contents) != null) {
-            $this->valor = DateTime::createFromFormat($this->dateformat->contents, $this->contents);
+            $this->valor = DateTime::createFromFormat($this->$formato->contents, $this->contents);
         } 
         else {
             $this->valor = null;
