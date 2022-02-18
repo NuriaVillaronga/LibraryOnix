@@ -51,9 +51,6 @@ class dateformatAttr
         if ($this->contents == "25"){
             $this->contents = "Y"; //YYYY (Calendario Hijri)
         }
-        if ($this->contents == null){
-            $this->contents = "Nulo"; 
-        }
         /*
         if ($this->contents == "03"){
             $this->contents = ""; //AAAAT -> trimestre ( T = 1,2,3,4)
