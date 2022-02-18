@@ -64,12 +64,6 @@ class DateFormatNode
         if ($this->contents == "10"){
             $this->contents = ""; //AAAAEAAAAE
         }
-        if ($this->contents == "12"){
-            $this->contents = ""; //Texto. Para fechas complejas, aproximadas o inciertas, o para fechas antes de la era común (AEC o a.C.)
-        }
-        if ($this->contents == "32"){
-            $this->contents = ""; //Cadena de texto (H)
-        }
        */   
     }
 }
