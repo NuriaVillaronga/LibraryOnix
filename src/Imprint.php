@@ -19,9 +19,9 @@ class Imprint
         }
 
         if (isset($nodeImprint->ImprintIdentifier) == true) {
-            $this->ImprintIdentifierList = new ImprintIdentifierList($nodeImprint); 
+            $this->imprintIdentifierList = new ImprintIdentifierList($nodeImprint); 
         } else {
-            $this->ImprintIdentifierList = null;
+            $this->imprintIdentifierList = null;
         }
     }
 }
