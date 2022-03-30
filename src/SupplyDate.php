@@ -12,7 +12,7 @@ class SupplyDate
 
     public function __construct(SimpleXMLElement $nodeSupplyDate) 
     {
-        $this->supplyDateRole = new SupplyDateRole($nodeSupplyDate->supplyDateRole);
+        $this->supplyDateRole = new SupplyDateRole($nodeSupplyDate->SupplyDateRole);
 
         $this->date = new Date($nodeSupplyDate); 
     }
