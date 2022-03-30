@@ -15,10 +15,10 @@ class CopyrightYear
 
     public function __construct(SimpleXMLElement $nodeCopyrightYear)  
     {
-        $this->contents = (string)($nodeCopyrightYear->Date); 
+        $this->contents = (string)($nodeCopyrightYear); 
 
-        if (isset($nodeCopyrightYear->Date['dateformat']) == true) {
-            $this->dateformat = new dateformatAttr($nodeCopyrightYear->Date['dateformat']);
+        if (isset($nodeCopyrightYear['dateformat']) == true) {
+            $this->dateformat = new dateformatAttr($nodeCopyrightYear['dateformat']);
             $this->valor= $this->getValor($this->dateformat);
         }
         else {
@@ -27,9 +27,9 @@ class CopyrightYear
         } 
     }
 
-    private function getValor($dateformat) {
-        if (DateTime::createFromFormat($dateformat->contents, $this->contents) != null) {
-            $valor = DateTime::createFromFormat($dateformat->contents, $this->contents);
+    private function getValor($format) {
+        if (DateTime::createFromFormat($format->contents, $this->contents) != null) {
+            $valor = DateTime::createFromFormat($format->contents, $this->contents);
         } 
         else {
             $valor = null;
