@@ -9,7 +9,7 @@ class CopyrightYearTest extends TestCase
     public function testCopyrightYear(){
         
         $nodoCopyrightYear = simplexml_load_string('<?xml version="1.0" encoding="UTF-8"?>
-                                                    <CopyrightYear dateformat="05">2021</CopyrightYear>'); 
+                                                    <CopyrightYear dateformat="11">20212020</CopyrightYear>'); 
         
         $cy = new CopyrightYear($nodoCopyrightYear); 
         

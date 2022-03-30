@@ -15,11 +15,19 @@ class SupplyDetail
     public ?PackQuantity $packQuantity; //(0,1)
     
     public Supplier $supplier; //(1)
+
+    public ?SupplyDateList $supplyDateList; //(0,n)
     
     public ProductAvailability $productAvailability; //(1)
     
     public function __construct(SimpleXMLElement $nodeSupplyDetail)
     {
+        if (isset($nodeSupplyDetail->SupplyDate) == true) {
+            $this->supplyDateList = new SupplyDateList($nodeSupplyDetail);
+        } else {
+            $this->supplyDateList = null;
+        }
+
         if (isset($nodeSupplyDetail->Stock) == true) {
             $this->stockList = new StockList($nodeSupplyDetail);
         } else {
