@@ -10,7 +10,7 @@ class SubjectSchemeVersion
 
     public function __construct(SimpleXMLElement $nodeSubjectSchemeVersion)
     {
-        $this->contents = (string) ($nodeSubjectSchemeVersion);
+        $this->contents = (string)($nodeSubjectSchemeVersion);
     }
 }
 

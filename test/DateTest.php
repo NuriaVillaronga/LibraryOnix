@@ -11,8 +11,8 @@ class DateTest extends TestCase
         
         $nodoPublishingDate = simplexml_load_string('<?xml version="1.0" encoding="UTF-8"?>
                                             <PublishingDate>
-                                                <DateFormat>00</DateFormat>
-                                                <Date>20210125</Date>
+                                                <DateFormat>05</DateFormat>
+                                                <Date>2021</Date>
                                             </PublishingDate>');
         
         $date = new Date($nodoPublishingDate);
@@ -23,9 +23,10 @@ class DateTest extends TestCase
         
         
         //<DateFormat>01</DateFormat>
-        //$dateFormat = new DateFormatNode($nodoPublishingDate->DateFormat);
-        //var_dump($dateFormat->contents);
-        var_dump($date->valor);
+        $dateFormat = new DateFormatNode($nodoPublishingDate->DateFormat);
+        var_dump($dateFormat->contents);
+
+        var_dump(date_format($date->valor, $dateFormat->contents));
         die();
     }
 }
