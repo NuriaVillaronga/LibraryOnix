@@ -11,6 +11,8 @@ class Territory
     public ?CountriesIncluded $countriesIncluded; //(0,1)
     
     public ?RegionsIncluded $regionsIncluded; //(0,1)
+
+    public ?RegionsExcluded $regionsExcluded; //(0,1)
     
     public function __construct(SimpleXMLElement $nodeTerritory)
     {
@@ -30,6 +32,12 @@ class Territory
             $this->regionsIncluded = new RegionsIncluded($nodeTerritory->RegionsIncluded);
         } else {
             $this->regionsIncluded = null;
+        }
+
+        if (isset($nodeTerritory->RegionsExcluded) == true) {
+            $this->regionsExcluded = new RegionsExcluded($nodeTerritory->RegionsExcluded);
+        } else {
+            $this->regionsExcluded = null;
         }
     }
 }
