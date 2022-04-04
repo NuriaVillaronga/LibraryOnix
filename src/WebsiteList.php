@@ -12,9 +12,9 @@ class WebsiteList
      */
     public $arrayWebsite = array();
 
-    public function __construct(SimpleXMLElement $nodePublisher)
+    public function __construct(SimpleXMLElement $nodePublisher_Contributor)
     {
-        foreach ($nodePublisher->Website as $nodeWebsite) {
+        foreach ($nodePublisher_Contributor->Website as $nodeWebsite) { 
             $this->arrayWebsite[] = new Website($nodeWebsite);
         }
     }

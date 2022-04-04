@@ -27,8 +27,17 @@ class Contributor
 
     public ?PersonName $personName; // (0,1) -
 
+    public ?WebsiteList $websiteList; // (0,n)
+
     public function __construct(SimpleXMLElement $nodeContributor)
     {
+        
+        if (isset($nodeContributor->Website) == true) {
+            $this->websiteList = new WebsiteList($nodeContributor);
+        } else {
+            $this->websiteList = null;
+        }
+        
         if (isset($nodeContributor->CorporateName) == true) {
             $this->corporateName = new CorporateName($nodeContributor->CorporateName);
         } else {
